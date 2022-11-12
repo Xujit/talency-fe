@@ -1,0 +1,54 @@
+//sideModal
+.modal {
+    div[class*="form-add-"] {
+        width: 100% !important;
+    }
+    .page-title {
+        font-size: 1.75rem;
+        font-weight: 600;
+        color: var(--brand-primary);
+        margin-bottom: 0.875rem;
+    }
+    &.sideModal {
+        .modal-dialog {
+            position: fixed;
+            right: 0;
+            margin: 0;
+            min-width: 35vw;
+            .modal-content {
+                min-height: 100vh;
+                border-radius: 0;
+                border: 0;
+                background: var(--modal-bg);
+                .modal-body {
+                    padding: 2rem;
+                    overflow: auto;
+                    height: calc(100vh - 150px);
+                }
+                .btn-close {
+                    transition: all 0.3s ease-in-out;
+                    &:hover {
+                        transform: rotate(360deg);
+                        box-shadow: none;
+                    }
+                    &:before {
+                        display: none;
+                    }
+                }
+                .modal-header {
+                    padding: 1rem 2rem;
+                    border-bottom: 0px;
+                    &.no-title {
+                        position: absolute;
+                        right: 0;
+                        z-index: 10;
+                    }
+                }
+                .modal-footer {
+                    justify-content: initial;
+                    padding: 0.5rem 2rem;
+                }
+            }
+        }
+    }
+}

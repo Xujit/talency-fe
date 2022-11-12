@@ -1,0 +1,65 @@
+.modal div[class*="form-add-"] {
+  width: 100% !important;
+}
+
+.modal .page-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--brand-primary);
+  margin-bottom: 0.875rem;
+}
+
+.modal.sideModal .modal-dialog {
+  position: fixed;
+  right: 0;
+  margin: 0;
+  min-width: 35vw;
+}
+
+.modal.sideModal .modal-dialog .modal-content {
+  min-height: 100vh;
+  border-radius: 0;
+  border: 0;
+  background: var(--modal-bg);
+}
+
+.modal.sideModal .modal-dialog .modal-content .modal-body {
+  padding: 2rem;
+  overflow: auto;
+  height: calc(100vh - 150px);
+}
+
+.modal.sideModal .modal-dialog .modal-content .btn-close {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal.sideModal .modal-dialog .modal-content .btn-close:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.modal.sideModal .modal-dialog .modal-content .btn-close:before {
+  display: none;
+}
+
+.modal.sideModal .modal-dialog .modal-content .modal-header {
+  padding: 1rem 2rem;
+  border-bottom: 0px;
+}
+
+.modal.sideModal .modal-dialog .modal-content .modal-header.no-title {
+  position: absolute;
+  right: 0;
+  z-index: 10;
+}
+
+.modal.sideModal .modal-dialog .modal-content .modal-footer {
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
+  padding: 0.5rem 2rem;
+}
+/*# sourceMappingURL=modal.css.map */

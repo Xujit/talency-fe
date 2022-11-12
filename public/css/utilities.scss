@@ -1,0 +1,202 @@
+
+//spacer classes
+$spacer: 5px;
+@each $box in a, x, y, t, b, l, r {
+    @for $i from 0 through 20 {
+        .m-#{$box}-#{$i} {
+            @if $box == "a" {
+                margin: ($spacer * $i);
+            }
+
+            @if $box == "x" {
+                margin-left: ($spacer * $i);
+                margin-right: ($spacer * $i);
+            }
+
+            @if $box == "y" {
+                margin-top: ($spacer * $i);
+                margin-bottom: ($spacer * $i);
+            }
+
+            @if $box == "t" {
+                margin-top: ($spacer * $i) !important;
+            }
+
+            @if $box == "b" {
+                margin-bottom: ($spacer * $i) !important;
+            }
+
+            @if $box == "l" {
+                margin-left: ($spacer * $i);
+            }
+
+            @if $box == "r" {
+                margin-right: ($spacer * $i) !important;
+            }
+        }
+
+        .m-#{$box}-n#{$i} {
+            @if $box == "a" {
+                margin: -($spacer * $i);
+            }
+
+            @if $box == "x" {
+                margin-left: -($spacer * $i);
+                margin-right: -($spacer * $i);
+            }
+
+            @if $box == "y" {
+                margin-top: -($spacer * $i);
+                margin-bottom: -($spacer * $i);
+            }
+
+            @if $box == "t" {
+                margin-top: -($spacer * $i);
+            }
+
+            @if $box == "b" {
+                margin-bottom: -($spacer * $i);
+            }
+
+            @if $box == "l" {
+                margin-left: -($spacer * $i);
+            }
+
+            @if $box == "r" {
+                margin-right: -($spacer * $i);
+            }
+        }
+
+        .p-#{$box}-#{$i} {
+            @if $box == "a" {
+                padding: ($spacer * $i) !important;
+            }
+
+            @if $box == "x" {
+                padding-left: ($spacer * $i);
+                padding-right: ($spacer * $i);
+            }
+
+            @if $box == "y" {
+                padding-top: ($spacer * $i);
+                padding-bottom: ($spacer * $i);
+            }
+
+            @if $box == "t" {
+                padding-top: ($spacer * $i);
+            }
+
+            @if $box == "b" {
+                padding-bottom: ($spacer * $i);
+            }
+
+            @if $box == "l" {
+                padding-left: ($spacer * $i) !important;
+            }
+
+            @if $box == "r" {
+                padding-right: ($spacer * $i);
+            }
+        }
+    }
+}
+//CSS for display
+.row {
+    width: 100%;
+    max-width: 100%;
+}
+.d-block {
+    display: block;
+}
+.d-none {
+    display: none;
+}
+.d-iblock {
+    display: inline-block;
+}
+.d-flex {
+    display: flex;
+}
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.clearfix {
+    overflow: auto;
+    &:after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+//width
+.w {
+    &-25 {
+        width: 25%;
+    }
+    &-50 {
+        width: 50%;
+    }
+    &-75 {
+        width: 75%;
+    }
+    &-100 {
+        width: 100%;
+    }
+}
+
+//text-links and styles
+.text {
+    &-left {
+        text-align: left;
+    }
+    &-center {
+        text-align: center;
+    }
+    &-right {
+        text-align: right;
+    }
+    &-justify {
+        text-align: justify;
+    }
+    &-brand-primary {
+        color: var(--brand-primary);
+    }
+    &-brand-secondary {
+        color: var(--brand-secondary);
+    }
+    &-dark-font {
+        color: var(--dark-font);
+    }
+    &-font {
+        color: var(--body-font);
+    }
+}
+a {
+    color: var(--body-font);
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    // &:hover {
+    //     text-decoration: underline;
+    // }
+    &.primary-link {
+        color: var(--brand-primary);
+    }
+    &.secondary-link {
+        color: var(--brand-secondary);
+    }
+    &.dark-link {
+        color: var(--dark-font);
+    }
+    &.font-link {
+        color: var(--body-font);
+    }
+}
+.img-fluid {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}

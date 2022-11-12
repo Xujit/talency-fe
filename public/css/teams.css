@@ -1,0 +1,55 @@
+.memb-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.35rem;
+}
+
+.memb-list .memb-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: calc(33% - 1rem);
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.memb-list .memb-item .memb-img {
+  width: 60px;
+  height: 60px;
+  background: var(--brand-primary-lite);
+  border-radius: var(--bdr-circle);
+}
+
+.memb-list .memb-item .memb-info {
+  margin-left: 1rem;
+}
+
+.memb-list .memb-item .memb-info .memb-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--dark-font);
+}
+
+.memb-list .memb-item .memb-info .memb-dept {
+  font-weight: 500;
+}
+
+.memb-list .memb-item .memb-info .memb-role {
+  font-weight: 300;
+}
+/*# sourceMappingURL=teams.css.map */
